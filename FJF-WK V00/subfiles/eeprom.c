@@ -66,8 +66,8 @@ void _EEPROM_saveSettings(void)
 
 	FLASH_ProgramByte(DATA_ADDR,SetTemp>>8);
 	FLASH_ProgramByte(DATA_ADDR+1,SetTemp&0xff);
-	FLASH_ProgramByte(DATA_ADDR+2,WorkTime);
-	WorkTimeBkp = WorkTime;
+	FLASH_ProgramByte(DATA_ADDR+2,WorkTimeBkp);
+	WorkTime = WorkTimeBkp;
 	while(FLASH_GetFlagStatus(FLASH_FLAG_EOP) == 0);
 	
 	FLASH_Lock(FLASH_MEMTYPE_DATA);
