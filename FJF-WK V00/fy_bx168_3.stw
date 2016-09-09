@@ -1,0 +1,12 @@
+;	STMicroelectronics Workspace file
+
+[Version]
+Keyword=ST7Workspace-V0.7
+
+[Project0]
+Filename=fy_bx168_3_v00.stp
+Dependencies=
+[Options]
+ActiveProject=fy_bx168_3_v00
+ActiveConfig=Debug
+AddSortedElements=0
